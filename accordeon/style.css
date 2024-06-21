@@ -1,0 +1,42 @@
+/*Das gesamte Akkordeon:*/
+.togglebox {
+    width: 400px;
+    background: #eee; /*Hintergrundfarbe der Inhalte*/
+    color:#333;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+label {
+    position: relative;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-top: 1px solid;
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+label[for*='1'] {
+    border: 0;
+}
+
+section {
+    height: 0;
+    transition: 0.3s height;
+    /*Animationszeit*/
+    overflow: hidden;
+}
+
+
+/*hier einstellen, wie hoch ein Inhaltsteil ist*/
+#toggle1:checked ~ #content1,
+#toggle2:checked ~ #content2,
+#toggle3:checked ~ #content3,
+#toggle4:checked ~ #content4 {
+    height: 100px;
+}

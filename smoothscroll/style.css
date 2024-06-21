@@ -1,0 +1,23 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+header {
+    position: sticky;
+    height: 60px;
+    background-color: #222;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid white;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,49 @@
+:root {
+    --header-outer-height: 400px;
+    --header-inner-height: 70px;
+    --header-height-difference: calc(var(--header-outer-height) - var(--header-inner-height));
+}
+
+body {
+    min-height: 300vh;
+    position: relative;
+}
+
+.header-outer {
+    height: var(--header-outer-height);
+    position: sticky;
+    top: calc(var(--header-height-difference) * -1);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("images/milkyway.webp");
+    background-size: cover;
+    background-position: top;
+}
+
+.header-inner {
+    height: var(--header-inner-height);
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1em;
+    ;
+}
+
+.header-navigation a {
+    margin-left: 1.75rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #222;
+    position: sticky;
+    bottom: 0;
+    border: 1px solid white;
+}

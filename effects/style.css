@@ -1,0 +1,102 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3em;
+}
+
+.rounded1 {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    padding:10px;
+}
+
+.rounded2 {
+    border: 2px solid black;
+    border-radius: 20px 0 20px 50px;
+    width: 150px;
+    height: 150px;
+    padding:10px;
+}
+
+.gradient1 {
+    background: linear-gradient(to right, magenta, #7030a0);
+    width: 150px;
+    height: 150px;
+}
+
+.gradient2 {
+    background: linear-gradient(to bottom right, green, yellow, blue, transparent);
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.shadow1 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    padding:10px;
+    background-color: white;
+    box-shadow: 20px 20px black;
+}
+
+.shadow2 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    padding:10px;
+    background-color: white;
+    box-shadow: 20px 20px 10px magenta;
+}
+
+.textshadow1 {
+    margin-left: 40px;
+    width: auto;
+    height: 150px;
+    line-height:150px;
+    font-size: 1.5em;
+    text-shadow: 5px 5px 2px black;
+}
+
+.textshadow2 {
+    margin-left: 40px;
+    width: auto;
+    height: 150px;
+    line-height:150px;
+    font-size: 1.5em;
+    text-shadow: 0 0 15px magenta;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    padding:10px;
+    background-color: red;
+    transition: width 0.5s, background-color 0.5s, box-shadow 0.5s;
+}
+
+.box:hover {
+    width:200px;
+    background-color:yellow;
+    box-shadow: 0 0 10px green;
+}
+
+.grow2 {
+    width: 150px;
+    height: 150px;
+    padding:10px;
+    background-color: red;
+    transition: width 0.5s, height 0.5s, background-color 1s, box-shadow 2s, color 0.5s;
+}
+
+.grow2:hover {
+    width:200px;
+    height:100px;
+    background-color:blue;
+    box-shadow: 10px 0 15px black;
+    color:white;
+}
